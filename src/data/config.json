@@ -1,0 +1,24 @@
+{
+  "businessInfo": {
+    "name": "Maharaja Home Foods",
+    "tagline": "Authentic homemade Indian sweets, savouries, pickles, ghee and honey",
+    "phone": "9705338571",
+    "whatsappNumber": "919705338571",
+    "email": "rajaganirajukuppala@gmail.com",
+    "address": "Draksharama, A.P - 533262",
+    "instagram": "@maga_maharaja"
+  },
+  "businessHours": {
+    "weekdays": "Mon - Fri: 9AM to 5PM",
+    "saturday": "Saturday: 9AM to 1PM",
+    "sunday": "Sunday: Holiday"
+  },
+  "delivery": {
+    "freeDeliveryThreshold": 1000,
+    "deliveryFee": 100
+  },
+  "upiDetails": {
+    "upiAddress": "9705338571-4@ybl",
+    "qrCodeImage": "/payment-qr-pic.png"
+  }
+}

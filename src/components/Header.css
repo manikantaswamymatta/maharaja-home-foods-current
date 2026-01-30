@@ -1,0 +1,258 @@
+/* ---------- Top Bar ---------- */
+.top-bar {
+  background: #0db14b;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  line-height: 1.4;
+}
+
+.truck-icon {
+  margin-right: 6px;
+}
+
+.free-badge {
+  background: #ffffff;
+  color: #0db14b;
+  padding: 3px 10px;
+  border-radius: 8px;
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+/* ---------- Header ---------- */
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 34px;
+  z-index: 998;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #6b2d2d;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ---------- Navigation ---------- */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  position: relative;
+  font-size: 15px;
+}
+
+.nav a.active {
+  color: #6b2d2d;
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #6b2d2d;
+}
+
+/* ---------- Cart ---------- */
+.cart-link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.cart {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid #fff;
+}
+
+/* ---------- Mobile Menu Toggle ---------- */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+  }
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 12px 15px;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    gap: 8px;
+    flex: 1;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  .logo p {
+    font-size: 11px;
+  }
+
+  .nav {
+    display: none;
+    gap: 15px;
+    width: 100%;
+    flex-direction: column;
+    order: 3;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+
+  .nav.mobile-open {
+    display: flex;
+  }
+
+  .nav a {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+
+  .nav a.active::after {
+    display: none;
+  }
+
+  .nav a.active {
+    background: #f0f0f0;
+    padding-left: 10px;
+  }
+
+  .cart {
+    order: 2;
+    font-size: 18px;
+  }
+
+  .top-bar {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .truck-icon {
+    margin-right: 4px;
+    font-size: 12px;
+  }
+
+  .free-badge {
+    padding: 2px 6px;
+    font-size: 11px;
+    margin-left: 3px;
+  }
+}

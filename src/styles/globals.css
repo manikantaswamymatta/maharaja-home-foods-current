@@ -1,0 +1,31 @@
+:root {
+  --maroon: #7A1F1F;
+  --gold: #E0B04B;
+  --bg-light: #FFF6EA;
+  --text-dark: #1D1D1D;
+  --text-muted: #666666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
